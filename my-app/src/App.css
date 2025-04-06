@@ -1,0 +1,407 @@
+/* HEADER STYLES */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 70px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* FOOTER STYLES */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #666;
+}
+
+/* Adjust body to prevent overlap with fixed header and footer */
+body {
+  padding-top: 60px; /* Same height as header */
+  padding-bottom: 40px; /* Same height as footer */
+}
+
+/* Center the form */
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+}
+
+/* Stylish form container */
+/* Stylish form container */
+.form-container {
+  padding: 3rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 400px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Labels beside input fields */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  width: 120px;
+  text-align: right;
+}
+
+/* Input fields */
+input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  margin-left: 10px;
+ 
+}
+
+input:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Stylish button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #0099cc);
+}
+
+/* Remember Me & Forgot Password */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Forgot Password button styled like a link */
+.forgot-password {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Stylish button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #0099cc);
+}
+
+
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Top Navigation Buttons */
+.top-nav {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  width: auto; 
+  padding: 10px;
+  margin-top: -5px;
+}
+
+.nav-btn {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+ 
+}
+
+.nav-btn:hover {
+  background-color: #d6d6d6;
+}
+
+/* Reset all default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body and HTML have a white background */
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: white; /* Full page background */
+}
+
+/* Remove background from the container and center it */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  background-color: transparent; /* No vertical background */
+}
+
+/* The form itself */
+.main-content {
+  width: 100%;
+  max-width: 450px; /* Limits form width */
+  background-color: white; /* Form background */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+
+/* Title */
+.title {
+  font-size: 26px; /* Slightly bigger for emphasis */
+  font-weight: bold;
+  text-align: center; /* Centering title */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ 
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-top: -25px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Highlighted Fields */
+.age-field {
+  border: 2px solid #6a0dad; /* Improved purple color */
+}
+
+.checkup-date {
+  border: 2px solid #d9534f; /* Improved red color */
+}
+
+/* View Dashboard Button */
+.dashboard-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Patient Info */
+.patient-info {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Graphs Container */
+.graphs-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Graph Box */
+.graph-box {
+  background: white;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.patient-name-input {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  outline: none;
+  width: auto;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row; /* Ensure buttons are in a row */
+  gap: 10px; /* Add spacing between buttons */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Align vertically */
+  margin-top: -35px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: -25px;
+}
+
+.nav-btn:hover {
+  background-color: #f0f0f0;
+}
+
+ 
+
